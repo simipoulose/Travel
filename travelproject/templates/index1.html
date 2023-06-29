@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome</title>
+</head>
+<body>
+<h1>hello</h1>
+</body>
+<li><a href="{% static 'index.htm' %}">Home</a></li>
+				<li><a href="{% static 'about.html' %}">About us</a></li>
+				{% if user.is_authenticated %}
+				<li>Hello{{user.username}}</li>
+				<li><a href="dmapp/logout">Logout</a></li>
+				{% else %}
+				<li><a href="dmapp/register">Register</a></li>
+				<li><a href="dmapp/login">Login</a></li>
+				{% endif %}
+			</ul>
+</html>
