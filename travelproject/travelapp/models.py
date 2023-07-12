@@ -8,3 +8,9 @@ class Place(models.Model):
     desc=models.TextField()
     def __str__(self):
         return self.name
+class Place(models.Model):
+    name1=models.CharField(max_length=250)
+    img1=models.ImageField(upload_to='pics')
+    desc1=models.TextField()
+    def __str__(self):
+        return self.name1      
