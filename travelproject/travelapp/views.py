@@ -1,11 +1,8 @@
 from django.shortcuts import render
 from .models import Place
-from .models import People
+from .models import Peoples
 
 def demo(request):
     obj=Place.objects.all()
-    return render(request,"index.html",{'result':obj})
-def demo1(request)
-    obj1=People.objects.all()
-    return render(request,"index.html",{'result1':obj1})
-
+    obj1=Peoples.objects.all()
+    return render(request,"index.html",{'result':obj,'result1':obj1})
