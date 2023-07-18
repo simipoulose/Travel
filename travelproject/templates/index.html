@@ -34,10 +34,10 @@
 									<li><a href="{% static 'about.html' %}">About us</a></li>
 				                     {% if user.is_authenticated %}
 									<li>Hello{{user.username}}</li>
-				                    <li><a href="dmapp/logout">Logout</a></li>
+				                    <li><a href="credentials/logout">Logout</a></li>
 				                    {% else %}
-				                    <li><a href="dmapp/register">Register</a></li>
-									<li><a href="dmapp/login">Login</a></li>
+				                    <li><a href="credentials/register">Register</a></li>
+									<li><a href="credentials/login">Login</a></li>
 				                    {% endif %}
 			                    </ul>
 							</nav>
@@ -231,13 +231,12 @@
 					</div>
 				</div>
                  {% endfor %}
-					</div>
+						<!-- Team Item -->
+			</div>
 		</div>
 	</div>
 
 	<!-- Team -->
-
-
 
 	<div class="team">
 		<div class="container">
